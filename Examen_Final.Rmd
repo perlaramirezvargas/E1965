@@ -168,7 +168,7 @@ base_registros_medicos <- base_registros_medicos %>%
 
 # Filtramos registros de pacientes dados de alta
 registros_dados_alta <- base_registros_medicos %>%
-  filter(estado == "dado de alta")
+  filter(estado == "Alta")
 
 # Identificamos registros con duraciones de estadía anormalmente largas o cortas
 umbral_estadia_larga <- quantile(registros_dados_alta$duracion_estadia, 0.95)
